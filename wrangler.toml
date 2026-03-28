@@ -9,3 +9,4 @@ assets = { directory = ".open-next/assets", binding = "ASSETS" }
 binding = "DB"
 database_name = "good-draw"
 database_id = "db5cd0fa-08bb-4e3f-ac7e-d3323d4c5071"
+migrations_dir = "drizzle/migrations"
