@@ -1,0 +1,11 @@
+name = "good-draw"
+main = ".open-next/worker.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+assets = { directory = ".open-next/assets", binding = "ASSETS" }
+
+[[d1_databases]]
+binding = "DB"
+database_name = "good-draw"
+database_id = "db5cd0fa-08bb-4e3f-ac7e-d3323d4c5071"
