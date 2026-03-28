@@ -27,5 +27,8 @@ jobs:
       - name: Dependency audit
         run: npm audit --audit-level=high
 
+      - name: Unit tests & coverage
+        run: npm run test:coverage
+
       - name: Type check & build
         run: npm run build

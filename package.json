@@ -2,6 +2,7 @@
   "name": "good-draw",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -12,7 +13,9 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate:local": "wrangler d1 migrations apply good-draw --local",
     "db:migrate:prod": "wrangler d1 migrations apply good-draw",
-    "seed": "OPENFEC_KEY=$OPENFEC_KEY npx tsx scripts/seed-races.ts"
+    "seed": "OPENFEC_KEY=$OPENFEC_KEY npx tsx scripts/seed-races.ts",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage"
   },
   "dependencies": {
     "next": "16.2.1",
@@ -30,6 +33,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vitest/coverage-v8": "^4.1.2",
     "drizzle-kit": "^0.31.10",
     "drizzle-orm": "^0.45.2",
     "eslint": "^9",
@@ -37,6 +41,7 @@
     "tailwindcss": "^4",
     "tsx": "^4.21.0",
     "typescript": "^5",
+    "vitest": "^4.1.2",
     "wrangler": "^4.78.0"
   }
 }
